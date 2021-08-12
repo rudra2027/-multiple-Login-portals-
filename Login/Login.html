@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html,
+        body {
+            place-items: center;
+        }
+        
+        .box {
+            background: white;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(241, 241, 241);
+            /* flex-direction: column; */
+            height: 840px;
+            /* margin-bottom: 5px; */
+            justify-content: space-evenly;
+        }
+        
+        .main {}
+        
+        .title {}
+        
+        .main_div {
+            width: 600px;
+            height: 690px;
+            background: #fff;
+            margin-top: 60px;
+            margin-left: 60px;
+            padding: 30px;
+            border-radius: 5px;
+            background-image: url('bg.gif');
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .main_div .title {
+            font-family: Poppins;
+            text-align: left;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        .main_div .social_icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .social_icons a {
+            display: block;
+            height: 45px;
+            width: 100%;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s linear;
+        }
+        
+        .social_icons a span {
+            margin-left: 5px;
+            font-size: 18px;
+        }
+        
+        .social_icons a:first-child {
+            margin-right: 5px;
+            background: #4267B2;
+        }
+        
+        .social_icons a:first-child:hover {
+            background: #375695;
+        }
+        
+        .social_icons a:last-child {
+            margin-left: 5px;
+            background: #1DA1F2;
+        }
+        
+        .social_icons a:last-child:hover {
+            background: #0d8bd9;
+        }
+        
+        form {
+            margin-top: 25px;
+        }
+        
+        form .input_box {
+            height: 50px;
+            width: 100%;
+            position: relative;
+            margin-top: 15px;
+        }
+        
+        .input_box input {
+            height: 100%;
+            width: 100%;
+            font-family: Poppins;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            padding-left: 45px;
+            font-size: 17px;
+            transition: all 0.3s ease;
+        }
+        
+        .input_box input:focus {
+            border-color: #61acb3;
+        }
+        
+        .input_box .icon {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: grey;
+        }
+        
+        form .option_div {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .option_div .check_box {
+            display: flex;
+            align-items: center;
+        }
+        
+        .option_div span {
+            margin-left: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .option_div .forget_div a {
+            font-size: 16px;
+            color: #61acb3;
+        }
+        
+        .button input {
+            padding-left: 0;
+            background: #61acb3;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+        
+        .button input:hover {
+            background: #50ceda;
+        }
+        
+        form .sign_up {
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        .sign_up a {
+            color: #61acb3;
+        }
+        
+        form a {
+            text-decoration: none;
+        }
+        
+        form a:hover {
+            text-decoration: underline;
+        }
+        
+        .logmage span {
+            height: 600px;
+            width: 600px;
+            margin-top: 60px;
+            display: flex;
+        }
+        
+        @media (min-width: 300px) and (max-width: 990px) {
+            body {
+                display: flow-root;
+            }
+            /* .box {
+                height: 100%px;
+                width: 100%;
+                content: inherit;
+            } */
+            .main_div {
+                margin-top: 20px;
+                float: center;
+                margin-left: 0px;
+                /* margin-right: 40px;
+                margin-bottom: 30px; */
+                height: 700px;
+            }
+            .logmage {
+                display: ruby-base-container;
+                margin-top: 10px;
+            }
+            .main_div hr {
+                display: none;
+            }
+            .forget_div {
+                float: right;
+            }
+            .logmage .img {
+                margin-top: -75px;
+                height: 100%;
+                width: 100%;
+                margin-left: -76px;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- main-area -->
+    <main>
+
+
+
+
+        <div class="box">
+            <div class="logmage">
+                <span><img  src="login.png" class="img" alt="image1" style="height:690px;width:744px"><span></div>
+    <div class="main_div">
+        
+
+
+        
+        <div class="title">
+            <center> <h2 style=" font-family:Regular 400; ">Welcome Back!</h2></center>
+            <center><h4 style="font-family:Extra-light 200 italic;float:center">Please Login To Your Account</h4></center>
+            <br>
+        </div>
+      
+            <form action="" method="POST">
+
+                <div class="input_box"><input type="text"  class="w3-input" name="username" id="user" placeholder="Username" required>
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                </div><br>
+
+                <div class="input_box"><input type="password" name="password" id="password" placeholder="Password" required>
+                    <div class="icon"><i class="fas fa-lock"></i></div>
+                </div>
+                <br><br>
+
+                <div class="option_div">
+                    <div class="check_box"><input type="checkbox">
+                        <span style="font-size:small;">Remember me</span>
+            </div>
+            <div class="forget_div"><a href="#">Forgot password?</a></div>
+        </div>
+        <br><br>
+        <div class="input_box button">
+            <input type="submit" name="but_submit" id="but_submit" value=" Login ">
+            <script type="text/javascript">
+                document.getElementById("but_submit").onclick = function() {
+                    location.href = "data.html";
+                };
+            </script>
+
+        </div>
+        <br>
+
+        <center>
+            <div class="sign_up ">Terms Of Use<a href="#"> Privacy Policy</a></div>
+        </center>
+
+        </form>
+        </div>
+        </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url(mn.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 10vw;
+}
+
+.login-box {
+    float: none;
+    max-width: 700px;
+    margin: 150px auto;
+}
+
+.login-left {
+    background: rgba(211, 211, 211, 0.5);
+    padding: 30px;
+}
+
+.login-right {
+    background: white;
+    padding: 30px;
+}
+
+.form-control {
+    background: transparent!important;
+}
+
+@media screen and (max-width: 800px) {
+    .body,
+    .login-box,
+    .login-left,
+    .login-right {
+        width: 100%;
+    }
+}
